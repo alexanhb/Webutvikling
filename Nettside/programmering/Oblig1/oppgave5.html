@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Testside</title>
+		<script>
+			
+			window.onload = tegn;
+			
+			function tegn() {
+				var ctx = document.getElementById("tegneflate").getContext("2d");
+				
+				ctx.beginPath();
+				ctx.rect(150,150,250,150);
+				ctx.stroke();
+				
+				/*taket*/
+				ctx.moveTo(150,150);
+				ctx.lineTo(275,0);
+				ctx.lineTo(400,150);
+				ctx.lineTo(150,150);
+				ctx.stroke();
+				
+				/*Vindu*/
+				ctx.moveTo(200,250);
+				ctx.lineTo(250,250);
+				ctx.lineTo(250,200);
+				ctx.lineTo(200,200);
+				ctx.lineTo(200,250);
+				ctx.stroke();	
+			
+			
+				/*Dør*/
+				ctx.moveTo(350,300);
+				ctx.lineTo(350,225);
+				ctx.lineTo(300,225);
+				ctx.lineTo(300,300);
+				ctx.lineTo(350,300);
+				ctx.stroke();
+				ctx.fill();
+			}
+		</script>
+	</head>
+	<body>
+		<canvas id=	"tegneflate" height="500" width="500"></canvas>
+	</body>
+</html>

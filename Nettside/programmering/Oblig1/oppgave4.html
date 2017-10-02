@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Testside</title>
+		<script>
+	
+			
+			window.onload = oppstart; 
+			
+			function oppstart() {
+				document.getElementById("btnEn").onclick = tallen;
+				document.getElementById("btnTo").onclick = tallto;
+				document.getElementById("btnTre").onclick = talltre;
+				document.getElementById("btnFire").onclick = tallfire;
+				document.getElementById("btnFem").onclick = tallfem;
+				document.getElementById("btnSeks").onclick = tallseks;
+				document.getElementById("btnSju").onclick = tallsju;
+				document.getElementById("btnAatte").onclick = tallaatte;
+				document.getElementById("btnNi").onclick = tallni;
+				document.getElementById("btnNull").onclick = tallnull;
+				}
+				
+			function tallen() {
+				document.getElementById("txttall").value += 1;
+			}
+			
+			function tallto() {
+				document.getElementById("txttall").value += 2;
+			}
+			
+			function talltre() {
+				document.getElementById("txttall").value += 3;
+			}
+			
+			function tallfire() {
+				document.getElementById("txttall").value += 4;
+			}
+			
+			function tallfem() {
+				document.getElementById("txttall").value += 5;
+			}
+			
+			function tallseks() {
+				document.getElementById("txttall").value += 6;
+			}
+			
+			function tallsju() {
+				document.getElementById("txttall").value += 7;
+			}
+			
+			function tallaatte() {
+				document.getElementById("txttall").value += 8;
+			}
+			
+			function tallni() {
+				document.getElementById("txttall").value += 9;
+			}
+			
+			function tallnull() {
+				document.getElementById("txttall").value += 0;
+			}
+			
+			
+		</script>
+	</head> 
+	<body>
+		<input id="txttall" type="text" />
+		<br><button id="btnEn" type="button">1</button>
+		<button id="btnTo" type="button">2</button>
+		<button id="btnTre" type="button">3</button>
+		<br><button id="btnFire" type="button">4</button>
+		<button id="btnFem" type="button">5</button>
+		<button id="btnSeks" type="button">6</button>
+		<br><button id="btnSju" type="button">7</button>
+		<button id="btnAatte" type="button">8</button>
+		<button id="btnNi" type="button">9</button>
+		<br><button id="btnNull" type="button">0</button>
+	</body>
+</html>

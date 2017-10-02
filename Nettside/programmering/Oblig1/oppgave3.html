@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Testside</title>
+		<script>
+	
+			
+			window.onload = oppstart; 
+			
+			function oppstart() {
+				document.getElementById("btnAdd").onclick = add;
+				document.getElementById("btnSubtract").onclick = subtract;
+				document.getElementById("btnDivide").onclick = divide;
+				document.getElementById("btnMultiply").onclick = multiply;
+			}
+			
+			function add() {
+				var box1 = parseInt( document.getElementById("txtbox1").value );
+				var box2 = parseInt( document.getElementById("txtbox2").value );
+				
+				var total = box1 + box2;
+		
+				document.getElementById("utskrift").innerHTML = total;
+		
+			}
+			
+			function subtract() {
+				var box1 = document.getElementById("txtbox1").value;
+				var box2 = document.getElementById("txtbox2").value;
+				
+				var total = box1 - box2;
+		
+				document.getElementById("utskrift").innerHTML = total;
+		
+			}
+			
+			function divide() {
+				var box1 = document.getElementById("txtbox1").value;
+				var box2 = document.getElementById("txtbox2").value;
+				
+				var total = box1 / box2;
+		
+				document.getElementById("utskrift").innerHTML = total;
+		
+			}
+			
+			function multiply() {
+				var box1 = document.getElementById("txtbox1").value;
+				var box2 = document.getElementById("txtbox2").value;
+				
+				var total = box1 * box2;
+		
+				document.getElementById("utskrift").innerHTML = total;
+		
+			}
+			
+		</script>
+	</head>
+	<body>
+		<input id="txtbox1" type="text"/>
+		<input id="txtbox2" type="text"/>
+		<button id="btnAdd" type="button">+</button>
+		<button id="btnSubtract" type="button">-</button>
+		<button id="btnDivide" type="button">/</button>
+		<button id="btnMultiply" type="button">*</button>
+		<p id="utskrift"></p>
+	</body>
+</html>

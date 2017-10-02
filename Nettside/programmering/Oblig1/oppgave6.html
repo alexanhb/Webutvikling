@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Testside</title>
+		<script>
+			
+			window.onload = Oppstart;
+			
+			var klikket = 0;
+			
+			function Oppstart() {
+				document.getElementById("btnleggtil").onclick = handleliste;
+			}
+			
+			function handleliste() {
+				klikket = klikket + 1;
+				document.getElementById("antallklikket").innerHTML = klikket;
+				var box1 = document.getElementById("antallprodukter").value;
+				var box2 = document.getElementById("txtprodukter").value;
+				
+				var total = box1 + "  " + box2;
+				
+				document.getElementById("liste").innerHTML = document.getElementById("liste").innerHTML + "<li>" +
+				     document.getElementById("txtprodukter").innerHTML + total + "</li>";
+			}
+		</script>
+	</head>
+	<body>
+		<h1>HANDLELISTE</h1>
+		Antall:<input id="antallprodukter" type="text" /><br />
+		Produkt:<input id="txtprodukter" type="text" /><br />
+		<button id="btnleggtil" type="button">Legg til</button>
+		<p>
+		<h2>Liste:</h2>
+		<ul id="liste">
+			<!--li>....</li>
+			<li>..</li-->
+		</ul>
+		Antall varer: <p id="antallklikket">0</p>
+	</body>
+</html>

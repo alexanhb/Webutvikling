@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+h1{
+	font-family:Cinzel;
+}
+
+h2{
+	font-family:Cinzel;
+}
+
+html{
+	background: Grey;
+}
+
+#filezillatag{
+	height: 350px;
+	Width: 450px;
+	float:right;
+	padding-right:15px;
+	padding-left:15px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+header{
+	padding-left:90px;
+	padding-right:50px;
+	background: white;
+	text-align:center;
+}
+
+a {
+	text-decoration: none; 
+}
+
+a.LesMerLink{
+	Color:black;
+	background-color:#white;
+	border:2px solid #4f4e72;
+	border-radius:10px;
+	padding:5px 5px;
+	margin:10px;
+}
+
+p{
+	color:black;
+	font-family:PT Sans;
+	margin:10px;
+}
+
+*{
+	text-decoration:none;
+	box-sizing: border-box;
+	}
+	
+body{
+	margin: 0 auto;
+	width:800px;
+	border: 1px solid #000000;
+	background: white;
+}
+
+aside {
+	float:right;
+	width:300px;
+	height:260px;
+	background:white; 
+}
+
+article { 
+    display: block;
+}
+
+nav {
+	display:inline-block;
+	width:100%;
+	background: white;
+	list-style:none;
+	text-align:left;
+	word-spacing:50px;
+	border: 1px solid #000000
+	
+}
+
+/*Første Meny*/
+nav ul {  
+    margin: 0 auto;  
+    width: 800px;  
+    list-style: none;
+} 
+	
+nav ul li{
+	display: inline-block;
+}
+
+nav ul li a { 
+    display: block;
+	margin-right: 10px;  
+    width: 110px;
+    font-size: 18px;  
+    line-height: 44px;    
+    text-decoration: none;	
+    color: black;
+}  
+
+/* Andre meny */
+nav ul li ul{
+	display:none;
+	position:absolute;
+}
+
+nav ul li:hover ul{
+	display: block;
+	width: 110px;
+	border:1px solid black;
+	background:#cccccc;
+	margin:0;
+	padding:0;
+}
+
+
+nav ul li ul li{
+	display: inline-block;
+	border-style:none;
+}
+
+
+nav ul li ul li a{
+	display:block;
+	line-height: 30px;
+	text-align: left;
+}
+
+footer{
+	clear:both;
+	background:#cccccc;
+	border-top:1px solid #000000;
+	padding:5px;
+	text-align:center;
+	color:#000000;
+	width: 100%;
+}

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+.master-grid{
+	width: 100%;
+	display:grid;
+	margin:0 auto;
+	grid-column-gap:10px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas: 
+	"header header header"
+	"Navigasjon Navigasjon Navigasjon"
+	"Introbilde Introbilde Introbilde"
+	"Innhold Innhold Innhold"
+	"Footer Footer Footer";
+	
+}
+
+body{
+	margin: 0 auto;
+	width:900px;
+	background-color:#999999
+}
+
+.header{
+	grid-area: header;
+	border:1px solid black;
+	border-radius:10px;
+	width:100%;
+	font-size:30px;
+	background-color:white;
+	text-align:center;
+	font-family: Work sans;
+	padding:5px;
+	color:black;
+	text-decoration:none;
+}
+
+.nav{
+	grid-area: Navigasjon;
+	border:1px solid black;
+	border-radius:10px;
+	display:inline-block;
+	width:100%;
+	list-style:none;
+	margin:0 auto;
+	background-color:white;
+	font-family: Work sans;
+	padding:5px;
+}
+
+/*Første Meny*/
+nav ul {  
+    margin: 0 auto;  
+    width: 100%;  
+    list-style: none;
+} 
+	
+nav ul li{
+	display: inline-block;
+	margin: 0 20px;
+}
+nav ul li a { 
+    display: block; 
+    width: 150px;
+    font-size: 18px;  
+    line-height: 44px;    
+    text-decoration: none;
+	text-align:Center;
+	color:black;
+}  
+
+.htmlogcssbilde{
+	grid-area: Introbilde;
+	width:910px;
+	height:250px;
+}
+
+.innhold{
+	grid-area:Innhold;
+	border:1px solid black;
+	border-radius:10px;
+	padding:auto;
+	width:100%;
+	background-color:white;
+	font-family: Work sans;
+	padding:5px;
+}
+
+.footer{
+	grid-area:Footer;
+	border: 1px solid black;
+	border-radius:10px;
+	width:900px;
+	background-color:white;
+	font-family: Work sans;
+	padding:5px;
+}

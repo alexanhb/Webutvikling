@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Testside</title>
+		<script>
+			
+			window.onload = oppstart;
+			
+			function oppstart() {
+				document.getElementById("HeiPaaDeg").onclick = visMelding;
+				document.getElementById("HaDetBra").onclick = visMelding2;
+			}
+			function visMelding() {
+				document.getElementById("utskrift").innerHTML = "Hei på deg"
+			}
+			
+			function visMelding2() {
+				document.getElementById("utskrift").innerHTML = "Ha det bra"
+			}
+			
+		</script>
+	</head>
+	<body>
+		<button id="HeiPaaDeg" type="button">Klikk her</button>
+		<button id="HaDetBra" type="button">Klikk her</button>
+		<p id="utskrift">Test</p>
+	</body>
+</html>
