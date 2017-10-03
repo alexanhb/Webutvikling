@@ -4,16 +4,21 @@
 		<meta charset="utf-8" />
 		<title>Testside</title>
 		<link rel="stylesheet" type="text/css" href="../../stiler/Oblig2/oppgavestil.css" />
+		<link rel="stylesheet" href="../../stiler/Oblig2/css/font-awesome.min.css" />
+		<script type="text/javascript" async
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=MML_CHTML">
+		</script>
+
 	</head>
 	<body>
 		
 	<div class="master-grid">
 		<header class="header">
-		<p><a href="../../weboblig2forside.html">Obligatoriske Oppgave 2</a></p>
+		<p>Obligatoriske Oppgave 2</p>
 		</header>
 		<nav class="nav">
 			<ul>
-				<li><a href ="#">Om denne siden</a></li>
+				<li><a href ="../../weboblig2forside.html""><i class="fa fa-home" aria-hidden="true"></i></a></li>
 				<li><a href ="webutvikling/Oblig2/mathml.html">MathML</a></li>
 				<li><a href ="#">SVG</a></li>
 				<li><a href ="#">Git og Github</a></li>
@@ -26,30 +31,75 @@
 		markup for presentasjon av matematiske uttrykk.MathML skal være integrert i HTML5. 
 		Det er en bedre måte å presentere ett mattestykke.</p>
 		
-		<p><apply>
-    <eq/>
-    <apply>
-        <plus/>
-        <apply>
-            <power/>
-            <ci>x</ci>
-            <cn>2</cn>
-        </apply>
-        <apply>
-            <times/>
-            <cn>4</cn>
-            <ci>x</ci>
-        </apply>
-       <cn>4</cn>
-    </apply>
-    <cn>0</cn>
-  </apply>
-		
+		<p>
+		<math>
+		   <mi>r</mi>
+		   <mo>=</mo>
+		   <msqrt>
+			  <mrow>
+				 <mo>(</mo>
+				 <msup>
+					<mi>x</mi>
+					<mn>2</mn>
+				 </msup>
+				 <mo>+</mo>
+				 <msup>
+					<mi>y</mi>
+					<mn>2</mn>
+				 </msup>
+				 <mo>)</mo>
+			  </mrow>
+		   </msqrt>
+		</math>
+		Hentet fra: <a href="http://www.it.hiof.no/~borres/dw/mathml/p-mathml.html">http://www.it.hiof.no/~borres/dw/mathml/p-mathml.html</a>
 		
 		</p>
+		<p>
+		<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+			<mfenced>
+				<mrow>
+					<mi> a </mi>
+					<mo> + </mo>
+					<mi> b </mi>
+				</mrow>
+			</mfenced>
+		</math>
+		Hentet fra: <a href="http://www.freedomscientific.com/content/html/jawshq/MathML-Samples.html">http://www.freedomscientific.com/content/html/jawshq/MathML-Samples.html</a>
+		</p>
+		<p>
+		<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+			<mrow>
+			  <mrow>
+				<msup>
+				  <mi>x</mi>
+				  <mn>2</mn>
+				</msup>
+				<mo>+</mo>
+				<mrow>
+				  <mn>4</mn>
+				  <mo>&InvisibleTimes;</mo>
+				  <mi>x</mi>
+				</mrow>
+				<mo>+</mo>
+				<mn>4</mn>
+			  </mrow>
+			  <mo>=</mo>
+			  <mn>0</mn>
+			</mrow>
+		</math>
+		Hentet fra: <a href="http://www.freedomscientific.com/content/html/jawshq/MathML-Samples.html">http://www.freedomscientific.com/content/html/jawshq/MathML-Samples.html</a>
+		</p><br />
+		
+		
+		<p>
+		De taggene som har blitt brukt her er: Math, mi, mn, mo,mrow,mfenced,msqrt,msup.
+		</p>
+		<p>
+		math:Dette er taggen du bruker for å introdusere mattestykke.
+		
 		</main>
 		<footer class="footer">
-		<p>A</p>
+		<p><a href="omdennesiden.html"><strong>Om denne siden</strong></a></p>
 		</footer>
 	</div>
 		
